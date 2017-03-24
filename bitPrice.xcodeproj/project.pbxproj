@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16472792F742AE9869E62997 /* Pods_bitPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8F25948AC0C8B97FDDA7B2 /* Pods_bitPrice.framework */; };
+		345761871E84C83C007C7ACA /* currentPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345761861E84C83C007C7ACA /* currentPrice.swift */; };
+		345761891E850B60007C7ACA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345761881E850B60007C7ACA /* Constants.swift */; };
 		34E10D531E84A97300A4052E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E10D521E84A97300A4052E /* AppDelegate.swift */; };
 		34E10D551E84A97300A4052E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E10D541E84A97300A4052E /* ViewController.swift */; };
 		34E10D581E84A97300A4052E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E10D561E84A97300A4052E /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BB2059F8E7288C1681F61A1 /* Pods-bitPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitPrice.release.xcconfig"; path = "Pods/Target Support Files/Pods-bitPrice/Pods-bitPrice.release.xcconfig"; sourceTree = "<group>"; };
+		345761861E84C83C007C7ACA /* currentPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = currentPrice.swift; sourceTree = "<group>"; };
+		345761881E850B60007C7ACA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		34E10D4F1E84A97300A4052E /* bitPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E10D521E84A97300A4052E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E10D541E84A97300A4052E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		34E10D591E84A97300A4052E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E10D5C1E84A97300A4052E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34E10D5E1E84A97300A4052E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8F25948AC0C8B97FDDA7B2 /* Pods_bitPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bitPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB689C915F04377C3F86368 /* Pods-bitPrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitPrice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bitPrice/Pods-bitPrice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16472792F742AE9869E62997 /* Pods_bitPrice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345761821E84C7ED007C7ACA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34E10D541E84A97300A4052E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		345761831E84C7F9007C7ACA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		345761841E84C804007C7ACA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34E10D521E84A97300A4052E /* AppDelegate.swift */,
+				34E10D591E84A97300A4052E /* Assets.xcassets */,
+				34E10D5B1E84A97300A4052E /* LaunchScreen.storyboard */,
+				34E10D5E1E84A97300A4052E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		345761851E84C819007C7ACA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				345761861E84C83C007C7ACA /* currentPrice.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		34E10D461E84A97300A4052E = {
 			isa = PBXGroup;
 			children = (
 				34E10D511E84A97300A4052E /* bitPrice */,
 				34E10D501E84A97300A4052E /* Products */,
+				51AE45E8378EEA9F71E725D4 /* Pods */,
+				AA13EC8F7F060F2C34DD78A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +99,31 @@
 		34E10D511E84A97300A4052E /* bitPrice */ = {
 			isa = PBXGroup;
 			children = (
-				34E10D521E84A97300A4052E /* AppDelegate.swift */,
-				34E10D541E84A97300A4052E /* ViewController.swift */,
+				345761851E84C819007C7ACA /* Model */,
+				345761841E84C804007C7ACA /* Supporting Files */,
+				345761831E84C7F9007C7ACA /* View */,
+				345761821E84C7ED007C7ACA /* Controller */,
 				34E10D561E84A97300A4052E /* Main.storyboard */,
-				34E10D591E84A97300A4052E /* Assets.xcassets */,
-				34E10D5B1E84A97300A4052E /* LaunchScreen.storyboard */,
-				34E10D5E1E84A97300A4052E /* Info.plist */,
+				345761881E850B60007C7ACA /* Constants.swift */,
 			);
 			path = bitPrice;
+			sourceTree = "<group>";
+		};
+		51AE45E8378EEA9F71E725D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBB689C915F04377C3F86368 /* Pods-bitPrice.debug.xcconfig */,
+				1BB2059F8E7288C1681F61A1 /* Pods-bitPrice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA13EC8F7F060F2C34DD78A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F25948AC0C8B97FDDA7B2 /* Pods_bitPrice.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34E10D611E84A97300A4052E /* Build configuration list for PBXNativeTarget "bitPrice" */;
 			buildPhases = (
+				833CC3FF643AC69F672EB7AA /* [CP] Check Pods Manifest.lock */,
 				34E10D4B1E84A97300A4052E /* Sources */,
 				34E10D4C1E84A97300A4052E /* Frameworks */,
 				34E10D4D1E84A97300A4052E /* Resources */,
+				87402A610EA05321D33E2F6B /* [CP] Embed Pods Frameworks */,
+				52A589490FFCC4EA52ACC80E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +161,7 @@
 				TargetAttributes = {
 					34E10D4E1E84A97300A4052E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Y94U73RFC7;
+						DevelopmentTeam = 59NM25KMBA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,13 +197,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52A589490FFCC4EA52ACC80E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bitPrice/Pods-bitPrice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833CC3FF643AC69F672EB7AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87402A610EA05321D33E2F6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bitPrice/Pods-bitPrice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34E10D4B1E84A97300A4052E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345761871E84C83C007C7ACA /* currentPrice.swift in Sources */,
 				34E10D551E84A97300A4052E /* ViewController.swift in Sources */,
 				34E10D531E84A97300A4052E /* AppDelegate.swift in Sources */,
+				345761891E850B60007C7ACA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +372,10 @@
 		};
 		34E10D621E84A97300A4052E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB689C915F04377C3F86368 /* Pods-bitPrice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y94U73RFC7;
+				DEVELOPMENT_TEAM = 59NM25KMBA;
 				INFOPLIST_FILE = bitPrice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.resports.bitPrice;
@@ -270,9 +386,10 @@
 		};
 		34E10D631E84A97300A4052E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB2059F8E7288C1681F61A1 /* Pods-bitPrice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y94U73RFC7;
+				DEVELOPMENT_TEAM = 59NM25KMBA;
 				INFOPLIST_FILE = bitPrice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.resports.bitPrice;
@@ -300,6 +417,7 @@
 				34E10D631E84A97300A4052E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
